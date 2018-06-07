@@ -17,6 +17,7 @@
 		</When>
 		<Otherwise>
 			<PropertyGroup>
+				
 				<!-- should be in \\serverName format-->
 				<DeploymentServer Condition="'$(DeploymentServerName)' != ''">$(DeploymentServerName)</DeploymentServer>
 				<DeploymentFolder>$(DeploymentServer)\C$\$(ServiceName)</DeploymentFolder>
